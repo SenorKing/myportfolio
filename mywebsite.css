@@ -1,0 +1,390 @@
+body {
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-container {
+    background-color: #C9975D;
+    border: 3px solid #6D071A;
+    padding: 15px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Name / Logo */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color:#6D071A;
+}
+
+/* Navigation Links */
+.nav-links {
+    display:flex;
+    gap:40px;
+}
+
+.nav-links a {
+    color:#6D071A;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:18px;
+    transition:.3s;
+}
+
+.nav-links a:hover {
+    color:white;
+}
+
+/* Icons */
+.social-icons {
+    display:flex;
+    gap:25px;
+}
+
+.social-icons a{
+    color:#6D071A;
+    font-size:25px;
+    transition:.3s;
+}
+
+.social-icons a:hover {
+    color:white;
+    transform:scale(1.2);
+}
+
+.nav-container a {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+.nav-container a:hover {
+    color: white;
+}
+
+/* Home Section */
+.home {
+    min-height: 10vh;
+    padding: 80px 10%;
+    background: #E6D3A3;
+}
+
+/* Main Layout */
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.download-btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #8B1538;
+    color: #D4AF37;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: royalblue;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.download-btn:active {
+    transform: scale(0.98);
+}
+
+
+h1, h3 {
+    color: #6D071A;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #6D071A;
+    text-align: center;
+    padding: 6px;
+}
+
+th {
+    background-color: #6D071A;
+    color: #D4AF37;
+}
+
+th > a {
+    color: #FFD700;
+}
+
+tr:nth-child(even) {
+    background-color: #E6D3A3;
+}
+
+tr:nth-child(odd) {
+    background-color: #C9975D;
+}
+
+tr:hover {
+    background-color: #8B1538;
+    color: white;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+}
+
+.zoom-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.zoomed {
+    transform: scale(1.75);
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Experience Carousel */
+.experience {
+    background:#F8F4E3;
+    padding:80px 10%;
+}
+
+.carousel {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+}
+
+.experience-card {
+    width:500px;
+    min-height:300px;
+    background:#E6D3A3;
+    border:3px solid #6D071A;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.2);
+}
+
+.experience-card h2 {
+    color:#6D071A;
+    font-size:28px;
+}
+
+.experience-card h3 {
+    color:#C9975D;
+    margin:10px 0;
+}
+
+.experience-card p {
+    color:#555;
+    font-style:italic;
+}
+
+.experience-card li {
+    margin:10px 0;
+    line-height:1.5;
+    color: black;
+}
+
+/* Buttons */
+.carousel button {
+    background:#6D071A;
+    color: gold;
+    border:none;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    font-size:25px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.carousel button:hover {
+    background:#D4AF37;
+    color:#6D071A;
+    transform:scale(1.1);
+}
+
+/* Dark mode: changes the theme to a darker color scheme*/
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+
+    .nav-container {
+        background-color: #4e2305;
+    }
+
+    .home {
+        background-color: #4e2305;
+    }
+
+    tr:nth-child(even) {
+        background-color: #4e2305;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #7a3809;
+    }
+
+    .experience-card {
+        width: 500px;
+        min-height: 300px;
+        background: indianred;
+        border: 3px solid #6D071A;
+        border-radius: 20px;
+        padding: 35px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+    }
+
+}
+
+/* ADDITIONS for mobile devices — append to the bottom of mywebsite.css
+/* ---------- Tablet & below (≤ 900px) ---------- */
+@media (max-width: 900px) {
+
+  /* Home section: stack the bio card and resume image instead of side-by-side */
+  .home > div[style*="display: flex"] {
+    flex-direction: column !important;
+  }
+
+  #bio-card {
+    max-width: 90% !important;
+    text-align: center;
+  }
+
+  .zoom-img {
+    width: 260px !important;
+    height: 260px !important;
+    margin-top: 20px;
+  }
+
+  /* Skills table: shrink padding and font so it fits without horizontal scroll */
+  table {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+
+  table td, table th {
+    padding: 8px !important;
+  }
+}
+
+/* ---------- Phone (≤ 600px) ---------- */
+@media (max-width: 600px) {
+
+  /* Nav: stack logo, links, socials, and the toggle vertically */
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 14px;
+  }
+
+  .links a {
+    font-size: 0.95rem;
+  }
+
+  .socials {
+    display: flex;
+    gap: 14px;
+  }
+
+  /* Home section text sizing */
+  #bio-card h1 span {
+    font-size: 1.6rem;
+  }
+
+  #bio-card p {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .zoom-img {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  #download .download-btn {
+    display: inline-block;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  /* Skills table: allow horizontal scroll instead of squeezing text */
+  section[title="Tools and Technologies"] {
+    overflow-x: auto;
+  }
+
+  section[title="Tools and Technologies"] table {
+    min-width: 480px;
+  }
+
+  /* Education table: stack the two cells instead of side-by-side */
+  #education table,
+  #education tr {
+    display: block;
+    width: 100%;
+  }
+
+  #education td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Experience carousel: shrink card and arrow buttons to fit small screens */
+  .carousel {
+    gap: 10px;
+  }
+
+  .experience-card {
+    max-width: 85%;
+    padding: 14px;
+  }
+
+  #leftButton,
+  #rightButton {
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+  }
+
+  /* Contact section */
+  .contact .title span {
+    font-size: 1.4rem;
+  }
+
+  .reveal-btn {
+    font-size: 0.9rem;
+    padding: 10px 14px;
+  }
+
+  footer #foot span {
+    font-size: 0.75rem;
+    text-align: center;
+    display: block;
+    padding: 0 10px;
+  }
+}

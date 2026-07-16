@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="mywebsite.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+
+<body>
+    <!-- navigation menu -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><span style="font-size: xx-large">Andre King</span></div>
+            <div class="links">
+                <a href="#">Home </a>
+                <a href="#skills"> Skills</a>
+                <a href="#education"> Education  </a>
+                <a href="#experience"> Experience  </a>
+                <a href="#contact"> Contacts </a>
+            </div>
+            <div class="socials">
+                    <!-- Linkedin Link -->
+                    <a class="social-icon" href="https://www.linkedin.com/in/andre-king-156ba2164/" target="_blank" aria-label="LinkedIn">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+
+                    <!-- GitHub Link -->
+                    <a href="https://github.com/SenorKing" target="_blank" aria-label="GitHub">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+
+                    <!-- Tableau Link -->
+                    <a href="https://public.tableau.com/app/profile/andre.king" target="_blank" aria-label="GitHub">
+                        <ion-icon name="logo-tableau"></ion-icon>
+                    </a>
+            </div>
+
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="toggleButton">
+                <label class="form-check-label" for="toggleButton" id="toggleLabel">Light Mode</label>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Home section -->
+    <section class="home" id="home">
+        <div class="home-img" style="display: flex; text-align: center; justify-content: center; align-items:center" >
+
+            <div id="bio-card" style="max-width: 750px; justify-content: center">
+                <h1><span>Andre King</span></h1>
+                <h4 class="typing-text"> <span> Who am I? </span> </h4>
+                    <p style="font-size: larger; t">
+                        Hi, I'm <strong style="color: darkblue; font-size:large"> Andre King </strong>, a motivated Computer Science
+                        student with years of experienced using Java, Python, SQL, and doing Data analysis. Strong problem-solving
+                        and analytical skills with hands-on experience in data structures, software development, database management,
+                        and data visualization. Passionate about using new technologies to solve real-world problems.
+                    </p>
+            </div>
+
+            <div class="home-img" style="display: flex; justify-content: right; align-items:center" >
+                <img class="zoom-img" src="resume.png" alt="Image" style="width: 400px; height: 400px;">
+            </div>
+        </div>
+        <div class="home-content" style="background: #C9975D ">
+            <div id="download" class="button" style="text-align: center">
+                <a href="resume.pdf" download="Andre_King_Resume.pdf" class="download-btn"> >>>> Download Resume <<<< </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills" title="Tools and Technologies">
+        <div>
+            <h1 class="section-title" style="text-align: center">
+                <span class="icon-holder"><ion-icon name="construct-outline"></ion-icon></span>  Tools and Technologies
+                <span class="icon-holder"><ion-icon name="hammer-outline"></ion-icon></span>
+            </h1>
+        </div>
+
+        <table> <!-- table of tools and built in HTML progress bar, th= table heading, td= table data -->
+            <tr>
+                <th style="padding: 12px; border: 2px solid black;"> Tool </th>
+                <th style="padding: 12px; border: 2px solid black;"> Skill Level</th>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid black; font-weight: bold;"> Java &nbsp; <i id="java-icon" style="color: #121212;" class="devicon-java-plain colored"></i> </td>
+                <td> <progress max="100" value="75"> 75% </progress> 75% </td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid black; font-weight: bold;"> C++ &nbsp; <i style="color: white; background: #121212" class="devicon-cplusplus-plain colored"></i> </td>
+                <td> <progress max="100" value="65"> 65% </progress> 65% </td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid black; font-weight: bold;"> Python &nbsp; <ion-icon name="logo-python"></ion-icon> </td>
+                <td> <progress max="100" value="65"> 65% </progress> 65% </td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid black; font-weight: bold;"> HTML &nbsp; <ion-icon name="logo-html5"></ion-icon> </td>
+                <td> <progress max="100" value="55"> 55% </progress> 55% </td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid black; font-weight: bold;"> SQL &nbsp; <i style="color: #121212" class="devicon-mysql-plain colored"></i> </td>
+                <td> <progress max="100" value="77"> 77% </progress> 77% </td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid black; font-weight: bold;"> JavaScript &nbsp; <ion-icon name="logo-javascript"></ion-icon> </td>
+                <td> <progress max="100" value="60"> 60% </progress> 60% </td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid black; font-weight: bold;"> CSS &nbsp; <ion-icon name="logo-css3"></ion-icon> </td>
+                <td> <progress max="100" value="65"> 65% </progress> 65% </td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid black; font-weight: bold;"> React &nbsp; <ion-icon name="logo-react"></ion-icon> </td>
+                <td> <progress max="100" value="50"> 60% </progress> 50% </td>
+            </tr>
+        </table>
+    </section>
+
+
+    <!-- Education section -->
+    <section id="education"><br><br>
+        <div>
+            <h1 style="text-align: center"><span class="icon-holder"><ion-icon name="school-outline"></ion-icon></span> Education
+            <span class="icon-holder"><ion-icon name="school-outline"></ion-icon></span></h1>
+        </div>
+        <table>
+            <tr>
+                <td style="padding: 12px; border: 2px solid black;"> <strong><em> BA Computer Science, Minor in Data Analytics</em></strong> </td>
+                <td style="padding: 12px; border: 2px solid black;"> <strong><em> Queens College, 2027 </em></strong><ion-icon name="school-outline"></ion-icon> </td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 2px solid black;"> <strong><em> Google, 2027 </em></strong><ion-icon name="school-outline"></ion-icon> </td>
+                <td style="padding: 12px; border: 2px solid black;"> <strong><em> Google Data Analytics Professional Certification</em></strong> </td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Experience section -->
+    <section id="experience" style="background-color: #355935 "><br><br>
+        <div>
+            <h1 style="text-align: center"><span class="icon-holder"><ion-icon name="school-outline"></ion-icon></span> &nbsp;
+                Experience &nbsp;<span class="icon-holder"><ion-icon name="construct-outline"></ion-icon></span>
+                &nbsp; Projects &nbsp;<span class="icon-holder"><ion-icon name="extension-puzzle-outline"></ion-icon></span>
+            </h1>
+        </div>
+
+        <br><br><br>
+        <div class="carousel">
+
+            <button id="leftButton">&lt;</button>
+
+                <div class="experience-card">
+                    <h2 id="role"></h2>
+                    <h3 id="org"></h3>
+                    <p id="period"></p>
+                    <ul id="points"></ul>
+                </div>
+
+            <button id="rightButton">&gt;</button>
+        </div>
+        <br><br><br><br><br><br>
+    </section>
+
+
+    <!-- contact me -->
+    <section class="contact" id="contact"><br>
+        <div class="content">
+            <div class="title"><span><strong>Contact Me</strong></span></div>
+            <div class="button">
+                <p>Shoot me a call or email below !</p>
+                <!-- Clicking this calls the JavaScript function to reviel email and cell -->
+                <button class="reveal-btn" id="contact-button" onclick="showEmail()">&nbspContact Me &nbsp;
+                    <ion-icon name="mail-unread-outline"></ion-icon>&nbsp
+                </button>
+            </div>
+            <br><br>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="Mysitejs.js"></script>
+    <!-- Spript to allow logos from ion icons website -->
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+
+<footer>
+    <div class="text" id="foot">
+        <span> Created by <strong><em>&copy; Andre King | 2026 All Rights Reserved.</em></strong> </span>
+    </div>
+</footer>
+</body>
+</html>
