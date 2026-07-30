@@ -1,11 +1,11 @@
 body {
-    background-color: antiquewhite;
+    background-color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-container {
-    background-color: #C9975D;
-    border: 3px solid #6D071A;
+    background-color: #ffffff;
+    border: 3px solid #1246c6;
     padding: 15px 50px;
     display: flex;
     align-items: center;
@@ -16,7 +16,7 @@ body {
 .logo {
     font-size: 28px;
     font-weight: bold;
-    color:#6D071A;
+    color: #0c0c0c;
 }
 
 /* Navigation Links */
@@ -26,7 +26,7 @@ body {
 }
 
 .nav-links a {
-    color:#6D071A;
+    color: #65b565;
     text-decoration:none;
     font-weight:bold;
     font-size:18px;
@@ -34,7 +34,7 @@ body {
 }
 
 .nav-links a:hover {
-    color:white;
+    color: #7c9ef1;
 }
 
 /* Icons */
@@ -50,7 +50,7 @@ body {
 }
 
 .social-icons a:hover {
-    color:white;
+    color: #b50505;
     transform:scale(1.2);
 }
 
@@ -61,14 +61,18 @@ body {
 }
 
 .nav-container a:hover {
-    color: white;
+    color: #1246c6;
 }
 
 /* Home Section */
 .home {
     min-height: 10vh;
     padding: 80px 10%;
-    background: #E6D3A3;
+    background: #ffffff;
+}
+
+.zoom-img{
+    border: 2px #121212;
 }
 
 /* Main Layout */
@@ -83,8 +87,8 @@ body {
 .download-btn {
     display: inline-block;
     padding: 14px 30px;
-    background-color: #8B1538;
-    color: #D4AF37;
+    background-color: #ffffff;
+    color: #0c0c0c;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -93,7 +97,7 @@ body {
 }
 
 .download-btn:hover {
-    background-color: royalblue;
+    background-color: rgb(124, 158, 241);
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
@@ -104,7 +108,7 @@ body {
 
 
 h1, h3 {
-    color: #6D071A;
+    color: #0c0c0c;
 }
 
 table {
@@ -113,30 +117,30 @@ table {
 }
 
 table, th, td {
-    border: 1px solid #6D071A;
+    border: 1px solid #d3bd94;
     text-align: center;
     padding: 6px;
 }
 
 th {
-    background-color: #6D071A;
-    color: #D4AF37;
+    background-color: rgba(18, 70, 198, 0.49);
+    color: rgb(12, 12, 12);
 }
 
 th > a {
-    color: #FFD700;
+    color: #ffffff;
 }
 
 tr:nth-child(even) {
-    background-color: #E6D3A3;
+    background-color: #ffffff;
 }
 
 tr:nth-child(odd) {
-    background-color: #C9975D;
+    background-color: rgba(28, 86, 230, 0.32);
 }
 
 tr:hover {
-    background-color: #8B1538;
+    background-color: #7c9ef1;
     color: white;
 }
 
@@ -158,7 +162,7 @@ nav{
 
 /* Experience Carousel */
 .experience {
-    background:#F8F4E3;
+    background: #ffffff;
     padding:80px 10%;
 }
 
@@ -172,8 +176,8 @@ nav{
 .experience-card {
     width:500px;
     min-height:300px;
-    background:#E6D3A3;
-    border:3px solid #6D071A;
+    background: #ffffff;
+    border:3px solid #0c0c0c;
     border-radius:20px;
     padding:35px;
     box-shadow:
@@ -181,12 +185,12 @@ nav{
 }
 
 .experience-card h2 {
-    color:#6D071A;
+    color: #0c0c0c;
     font-size:28px;
 }
 
 .experience-card h3 {
-    color:#C9975D;
+    color: #0c0c0c;
     margin:10px 0;
 }
 
@@ -203,8 +207,8 @@ nav{
 
 /* Buttons */
 .carousel button {
-    background:#6D071A;
-    color: gold;
+    background: #7c9ef1;
+    color: #ffffff;
     border:none;
     width:50px;
     height:50px;
@@ -215,8 +219,8 @@ nav{
 }
 
 .carousel button:hover {
-    background:#D4AF37;
-    color:#6D071A;
+    background: #ec7373;
+    color: #0c0c0c;
     transform:scale(1.1);
 }
 
@@ -226,29 +230,50 @@ nav{
     color: #ffffff;
 
     .nav-container {
-        background-color: #4e2305;
+        background-color: #0c0c0c;
     }
 
     .home {
-        background-color: #4e2305;
+        background-color: #0c0c0c;
     }
 
     tr:nth-child(even) {
-        background-color: #4e2305;
+        background-color: #7c9ef1;
     }
 
     tr:nth-child(odd) {
-        background-color: #7a3809;
+        background-color: #ffffff;
     }
 
     .experience-card {
         width: 500px;
         min-height: 300px;
-        background: indianred;
-        border: 3px solid #6D071A;
+        background: rgba(85, 85, 85, 0.66);
+        border: 3px solid #ffffff;
         border-radius: 20px;
         padding: 35px;
         box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+    }
+
+    .experience-card h2 {
+    color: #ffffff;
+    font-size:28px;
+    }
+
+    .experience-card h3 {
+        color: #ffffff;
+        margin:10px 0;
+    }
+
+    .experience-card p {
+        color: #ffffff;
+        font-style:italic;
+    }
+
+    .experience-card li {
+        margin:10px 0;
+        line-height:1.5;
+        color: #ffffff;
     }
 
 }
